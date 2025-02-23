@@ -1,4 +1,4 @@
-name: Access Other Rep
+name: Access Other Re
 
 on:
   push:
@@ -21,8 +21,9 @@ jobs:
         env:
           MY_ACCESS_TOKEN: ${{ secrets.MY_ACCESS_TOKEN }}
         run: |
-          find ./ -print
-          cd ..
+          find ../../ -print
+          cd ../../
           ls
           echo "Successfully accessed the private repo!"
+
 
