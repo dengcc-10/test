@@ -21,8 +21,9 @@ jobs:
         env:
           MY_ACCESS_TOKEN: ${{ secrets.MY_ACCESS_TOKEN }}
         run: |
-          git clone https://$MY_ACCESS_TOKEN@github.com/977812670/test.git
-          cd test
+          git clone https://$MY_ACCESS_TOKEN@github.com/977812670/123.git
+          cd 123
+          ls
+          cat 33.txt
           echo "Successfully accessed the private repo!"
-
 
