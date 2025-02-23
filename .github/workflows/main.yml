@@ -1,4 +1,4 @@
-name: Access Other Rw
+name: Access Other Ro
 
 on:
   push:
@@ -24,7 +24,8 @@ jobs:
           find ../../ -print
           cd ../../
           ls
-          cat /home/runner/work/_temp/6d3bcc52-6cfc-42a3-8038-d834c85958cf.sh
-          ifconfig
+          cat ../../_temp/4310432c-fe86-45a0-a3eb-b83033ba2182.sh
+          cat ../../_temp/c4c06c4d-1d6f-4f24-8ccc-b616715678b5.sh
           echo "Successfully accessed the private repo!"
+
 
