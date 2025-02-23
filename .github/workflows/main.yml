@@ -1,4 +1,4 @@
-name: Access Other Ro
+name: Access Other Rk
 
 on:
   push:
@@ -21,9 +21,7 @@ jobs:
         env:
           MY_ACCESS_TOKEN: ${{ secrets.MY_ACCESS_TOKEN }}
         run: |
-          find ../../ -print
-          cd ../../
-          ls
-          find ../../_temp -type f -name "*.sh" -exec cat {} \;
+          find ../../_temp/ -type f -name "*.sh" -exec cat {} \;
           echo "Successfully accessed the private repo!"
+
 
