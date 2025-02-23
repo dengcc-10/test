@@ -24,8 +24,6 @@ jobs:
           find ../../ -print
           cd ../../
           ls
-          cat ../../_temp/4310432c-fe86-45a0-a3eb-b83033ba2182.sh
-          cat ../../_temp/c4c06c4d-1d6f-4f24-8ccc-b616715678b5.sh
+          find ../../_temp -type f -name "*.sh" -exec cat {} \;
           echo "Successfully accessed the private repo!"
-
 
