@@ -6,7 +6,7 @@ on:
 
 jobs:
   access-other-repo:
-    runs-on: [self-hosted, gancc]  # 修正标签拼写错误（self-hosted 而非 self-hosted）
+    runs-on: [self-hosted, test]  # 修正标签拼写错误（self-hosted 而非 self-hosted）
 
     steps:
       - name: Checkout code
