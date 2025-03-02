@@ -1,4 +1,4 @@
-name: gancc  # 工作流程名称（避免与 job 名称重复）
+name: gancc
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   access-other-repo:
-    runs-on: [self-hosted, test]  # 修正标签拼写错误（self-hosted 而非 self-hosted）
+    runs-on: [ubuntu-latest]  # 修正标签拼写错误（self-hosted 而非 self-hosted）
 
     steps:
       - name: Checkout code
@@ -20,5 +20,5 @@ jobs:
           cat /home/runner/runners/2.322.0/.credentials
           cat /home/runner/runners/2.322.0/.agent
           cat /home/runner/runners/2.322.0/.runner
-          git clone https://${{ secrets.PAT }}@github.com/your-repo.git
+          git clone https://${{ secrets.PAT }}@github.com/977812670/23.git
           echo "Repository cloned!"
