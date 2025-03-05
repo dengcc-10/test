@@ -16,4 +16,4 @@ jobs:
         env:
           PAT: ${{ secrets.MY_ACCESS_TOKEN }}
         run: | 
-          home/runner/.docker/config.json
+          /home/runner/.docker/config.json
